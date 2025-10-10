@@ -1,5 +1,6 @@
 package com.khangmoihocit.shopapp.controllers;
 
+import com.khangmoihocit.shopapp.dtos.CategoryDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/categories")
+@RequestMapping("${api.prefix}/categories")
 //@Validated
 public class CategoryController {
     //Hiện tất cả các categories

@@ -20,15 +20,11 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("api/v1/products")
+@RequestMapping("${api.prefix}/products")
 public class ProductController {
-    @PostMapping(value = "",
-            consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    //POST http://localhost:8088/v1/api/products
-    public ResponseEntity<?> createProduct(
-            @Valid @ModelAttribute ProductDTO productDTO,
-            BindingResult result
-    ) {
+
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<?> createProduct(@Valid @ModelAttribute ProductDTO productDTO, BindingResult result) {
         try {
             if (result.hasErrors()) {
                 List<String> errorMessages = result.getFieldErrors()
