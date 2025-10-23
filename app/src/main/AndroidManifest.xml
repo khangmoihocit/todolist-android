@@ -11,11 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Todolist">
+<!--        <activity-->
+<!--            android:name=".activity.MainActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".activity.OnboardingActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.AuthActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.OnboardingActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
