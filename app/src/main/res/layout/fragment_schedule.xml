@@ -6,22 +6,13 @@
     android:orientation="vertical"
     tools:context=".fragment.ScheduleFragment">
 
-    <!-- Bạn có thể đặt CalendarView ở đây -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="[Khu vực Lịch (CalendarView)]"
+        android:text="lịch trình"
         android:gravity="center"
         android:background="@color/white"
         android:layout_margin="16dp"/>
-
-    <!-- Danh sách Lịch trình -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_schedule"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingHorizontal="16dp"
-        tools:listitem="@layout/item_note" /> <!-- Tạm thời dùng chung item layout -->
 
 </LinearLayout>

@@ -7,7 +7,6 @@
     android:orientation="vertical"
     tools:context=".fragment.NotesFragment">
 
-    <!-- 1. Thanh Tìm kiếm (Dùng SearchView) -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view_notes"
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
         app:iconifiedByDefault="false"
         app:queryBackground="@android:color/transparent" />
 
-    <!-- 2. Danh sách Ghi chú (Dùng RecyclerView) -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_notes"
         android:layout_width="match_parent"
