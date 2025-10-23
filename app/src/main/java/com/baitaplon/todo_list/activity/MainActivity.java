@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         if (position == 0) {
             // Tab Lịch trình (Được chọn)
             tabSchedule.setBackgroundResource(R.drawable.bg_tab_selected);
-            tabSchedule.setTextColor(ContextCompat.getColor(this, R.color.text_primary));
+            tabSchedule.setTextColor(ContextCompat.getColor(this, R.color.primary));
 
             // Tab Ghi chú (Không được chọn)
             tabNotes.setBackgroundResource(R.drawable.bg_tab_unselected);
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
             // Tab Ghi chú (Được chọn)
             tabNotes.setBackgroundResource(R.drawable.bg_tab_selected);
-            tabNotes.setTextColor(ContextCompat.getColor(this, R.color.text_primary));
+            tabNotes.setTextColor(ContextCompat.getColor(this, R.color.primary));
         }
     }
 
