@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".fragment.ScheduleFragment">
 
-    <TextView
+    <CalendarView
+        android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="lịch trình"
-        android:gravity="center"
-        android:background="@color/white"
-        android:layout_margin="16dp"/>
+        android:layout_marginHorizontal="16dp"
+        android:theme="@style/CustomCalendar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_schedule_secondary" />
 
 </LinearLayout>

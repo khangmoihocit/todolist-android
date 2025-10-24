@@ -4,6 +4,12 @@
         <item name="android:fontFamily">@font/nunito_family</item>
     </style>
 
+    <style name="CustomCalendar" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
     <style name="AuthInputStyle" parent="Widget.AppCompat.EditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">56dp</item>

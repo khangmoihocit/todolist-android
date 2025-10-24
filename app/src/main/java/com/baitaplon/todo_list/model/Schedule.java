@@ -22,6 +22,14 @@ public class Schedule {
     private String place;
     private String notes;
     private Boolean isCompleted;
+
+    public String getTimeFromTo(){
+        if(this.startTime.isEmpty() || this.endTime.isEmpty()) return "";
+        String start = this.startTime.substring(12, 17); //lấy giờ phút (hh:mm)
+        String end = this.endTime.substring(12, 17); //lấy giờ phút (hh:mm)
+        return start + " - " + end;
+    }
+
     public Schedule(){}
 
     public int getId() {
