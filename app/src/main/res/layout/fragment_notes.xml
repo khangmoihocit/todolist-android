@@ -7,18 +7,17 @@
     android:orientation="vertical"
     tools:context=".fragment.NotesFragment">
 
-    <!-- 1. Thanh Tìm kiếm (Dùng SearchView) -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view_notes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="366dp"
+        android:layout_height="40dp"
         android:layout_margin="16dp"
         android:background="@drawable/bg_search_view"
         app:queryHint="Tìm ghi chú"
         app:iconifiedByDefault="false"
+        android:layout_gravity="center"
         app:queryBackground="@android:color/transparent" />
 
-    <!-- 2. Danh sách Ghi chú (Dùng RecyclerView) -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_notes"
         android:layout_width="match_parent"

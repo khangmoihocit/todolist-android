@@ -26,7 +26,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:text="on.time"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/primary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_more_vert"
-                app:tint="@color/text_primary" />
+                app:tint="@color/primary" />
 
             <ImageView
                 android:id="@+id/btn_notifications"
@@ -47,7 +47,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/ic_notifications"
-                app:tint="@color/text_primary" />
+                app:tint="@color/primary" />
         </RelativeLayout>
 
         <!-- Cụm Tab -->
@@ -120,10 +120,11 @@
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="92dp"
         android:layout_marginEnd="16dp"
-        app:backgroundTint="@color/white"
-        app:tint="@color/primary"
-        android:src="@drawable/ic_calendar"
+        app:backgroundTint="#7E64FF"
+        app:tint="@null"
+        android:src="@drawable/img_icon_addschedule"
         android:visibility="gone"
+        app:elevation="0dp"
         app:fabSize="mini" />
     <TextView
         android:id="@+id/tv_fab_schedule"
@@ -133,7 +134,6 @@
         android:text="Lịch trình"
         android:textColor="@color/text_primary"
         android:padding="6dp"
-        android:background="@drawable/bg_note_item"
         android:layout_marginBottom="100dp"
         android:layout_marginEnd="72dp"
         android:visibility="gone"
@@ -142,14 +142,14 @@
     <!-- Nút Thêm Ghi Chú (ẩn) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_note"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="156dp"
         android:layout_marginEnd="16dp"
-        app:backgroundTint="@color/white"
-        app:tint="@color/primary"
-        android:src="@drawable/ic_note"
+        app:backgroundTint="#7E64FF"
+        app:tint="@null"
+        android:src="@drawable/img_icon_addnote"
         android:visibility="gone"
         app:fabSize="mini" />
     <TextView
@@ -160,7 +160,6 @@
         android:text="Ghi chú"
         android:textColor="@color/text_primary"
         android:padding="6dp"
-        android:background="@drawable/bg_note_item"
         android:layout_marginBottom="164dp"
         android:layout_marginEnd="72dp"
         android:visibility="gone"
