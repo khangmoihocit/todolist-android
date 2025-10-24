@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.baitaplon.todo_list.R;
 
+//màn hình khi chạy app lần đầu
 public class OnboardingActivity extends AppCompatActivity {
     Button btnStart;
 
