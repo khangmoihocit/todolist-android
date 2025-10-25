@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
@@ -17,6 +18,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.baitaplon.todo_list.R;
 import com.baitaplon.todo_list.adapter.MainViewPagerAdapter;
 import com.baitaplon.todo_list.fragment.AddEditNoteFragment;
+import com.baitaplon.todo_list.fragment.AddEditScheduleFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
             showAddNoteFragment();
             closeFabMenu();
         });
+        fabSchedule.setOnClickListener(v->{
+            showAddScheduleFragment();
+            closeFabMenu();
+        });
 
     }
 
@@ -65,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = fm.beginTransaction();
 
         ft.add(android.R.id.content, addNoteFragment, "AddNoteFragment");
+        ft.addToBackStack(null);
+        ft.commit();
+    }
+
+    private void showAddScheduleFragment(){
+        AddEditScheduleFragment addEditScheduleFragment = new AddEditScheduleFragment();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+
+        ft.add(android.R.id.content, addEditScheduleFragment, "AddScheduleFragment");
         ft.addToBackStack(null);
         ft.commit();
     }
